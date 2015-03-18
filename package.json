@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-clean",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clean built files or folders.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,11 @@
     "laravel",
     "elixir"
   ],
-  "author": "Jace Ju <jaceju@gmail.com> (https://github.com/jaceju)",
+  "author": {
+    "name": "Jace Ju",
+    "email": "jaceju@gmail.com",
+    "url": "https://github.com/jaceju"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jaceju/laravel-elixir-clean/issues"
