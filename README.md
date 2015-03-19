@@ -34,3 +34,7 @@ Or just clean folders only:
 ```bash
 gulp clean
 ```
+
+## License
+
+MIT
