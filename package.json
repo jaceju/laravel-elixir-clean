@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/jaceju/laravel-elixir-clean",
   "dependencies": {
-    "del": "^1.1.1",
-    "underscore": "^1.8.2"
+    "del": "^2.0.2",
+    "vinyl-paths": "^2.0.0"
   }
 }
