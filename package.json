@@ -26,7 +26,13 @@
   },
   "homepage": "https://github.com/jaceju/laravel-elixir-clean",
   "dependencies": {
-    "del": "^1.1.1",
-    "underscore": "^1.8.2"
-  }
+    "gulp-clean": "^0.3.1"
+  },
+  "gitHead": "613b64c2d9b72387d2fc88e33fc837940e0bb480",
+  "readme": "# laravel-elixir-clean\n\nClean built files or folders.\n\n## Install\n\n```sh\n$ npm install laravel-elixir-clean --save-dev\n```\n\n## Usage\n\nClean folders: `public/css`, `public/js`, `public/build`.\n\n```javascript\nvar elixir = require('laravel-elixir');\nrequire('laravel-elixir-clean');\n\nelixir(function(mix) {\n  mix.clean()\n     .less('*.less')\n     .coffee('*.coffee');\n});\n```\n\nThen run tasks:\n\n```bash\ngulp\n```\n\nOr just clean folders only:\n\n```bash\ngulp clean\n```\n\n## License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "_id": "laravel-elixir-clean@0.1.1",
+  "_shasum": "1298f61173fa3f94b1703d8611bad50bcce62eb7",
+  "_from": "../../../../../var/folders/n5/m01kjk812_vc816h73rhxqww0000gn/T/npm-12028-52a423b0/git-cache-4c341c5a935e/613b64c2d9b72387d2fc88e33fc837940e0bb480",
+  "_resolved": "git://github.com/MujibAzizi/laravel-elixir-clean#613b64c2d9b72387d2fc88e33fc837940e0bb480"
 }

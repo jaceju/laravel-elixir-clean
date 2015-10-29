@@ -1,22 +1,17 @@
-'use strict';
-
 var gulp = require('gulp');
-var elixir = require('laravel-elixir');
-var _ = require('underscore');
-var del = require('del');
+var Elixir = require('laravel-elixir');
+var clean = require('gulp-clean');
 
-elixir.extend('clean', function (dirs) {
+var Task = Elixir.Task;
 
-    // dirs = _.union(['public/build'], dirs);
-    dirs = dirs || [
-        'public/css',
-        'public/js',
-        'public/build'
-    ];
+Elixir.extend('clean', function(src, options) {
 
-    gulp.task('clean', function (cb) {
-        del(dirs, cb);
+    new Task('clean', function() {
+        options = options || {
+            read: false
+        };
+
+        return gulp.src(src, options).pipe(clean());
     });
 
-    return this.queueTask('clean');
 });
