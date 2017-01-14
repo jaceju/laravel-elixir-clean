@@ -14,9 +14,10 @@ elixir.extend('clean', function (dirs) {
         'public/build'
     ];
 
-    gulp.task('clean', function (cb) {
-        del(dirs, cb);
+    var Task = Elixir.Task;
+
+    new Task('clean', function(cb) {
+        return del(dirs, cb);
     });
 
-    return this.queueTask('clean');
 });
